@@ -5,6 +5,14 @@ public class Animal {
     private Proprietario dono;
 
     public Animal(){}
+
+    public Animal(String nomeAnimal, String racaAnimal, String corAnimal, String anoNascimentoAnimal) {
+        this.nomeAnimal = nomeAnimal;
+        this.racaAnimal = racaAnimal;
+        this.corAnimal = corAnimal;
+        this.anoNascimentoAnimal = anoNascimentoAnimal;
+        dono = new Proprietario();
+    }
     
     public Animal(String nomeAnimal, String racaAnimal, String corAnimal, String anoNascimentoAnimal,
     String nomeProprietario, String telProprietario) {
