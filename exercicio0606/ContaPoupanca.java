@@ -3,11 +3,12 @@ package exercicio0606;
 public class ContaPoupanca extends Conta {
     private double taxaSaque;
 
-    public ContaPoupanca(double taxaSaque) {
+    public ContaPoupanca(int numConta, double taxaSaque) {
+        super(numConta);
         this.taxaSaque = taxaSaque;
     }
 
-    public ContaPoupanca(String numConta, double saldoConta, double taxaSaque) {
+    public ContaPoupanca(int numConta, double saldoConta, double taxaSaque) {
         super(numConta, saldoConta);
         this.taxaSaque = taxaSaque;
     }
